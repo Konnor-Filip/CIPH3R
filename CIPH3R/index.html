@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>C1PHER</title>
+    <meta
+      name="description"
+      content="Take part in a learning experience about cryptology, networking, and forensics"
+    />
+    <meta name="author" content="Konnor Filip" />
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <div class="logo-container" id=”logo”>
+        <img src="C1PHER.gif"></img> 
+      </div>
+      <div class="name">
+        <p>C1PHER</p>
+      </div>
+      <div class="input-field">
+        <form action="/action_page.php">
+          <input type="text" id="pswd" name="password">
+          <input type="button" value="Submit" onclick="checkPswd();" />
+          <script type="text/javascript">
+            function checkPswd() {
+              var confirmPassword = "welcome";
+              var password = document.getElementById("pswd").value;
+              if (password == confirmPassword) {
+                window.location = "welcome.html";
+              }
+              else {
+                alert("Passwords do not match.");
+              }
+            }
+          </script>
+          <!-- Key: 01110111 01100101 01101100 01100011 01101111 01101101 01100101 -->
+      </div>
+  </body>
+</html>
